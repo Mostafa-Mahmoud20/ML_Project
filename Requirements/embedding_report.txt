@@ -1,0 +1,39 @@
+---------- Embedding Report Summary ------------
+1. Dataset Statistics:
+
+	Total samples: 300
+
+		Class distribution:
+
+			- Human-generated: 150 samples
+
+				- Business: 50
+
+				- Sports: 50
+
+				- Science: 50
+
+			- AI-generated: 150 samples
+
+				- Business: 50
+
+				- Sports: 50
+
+				- Science: 50
+
+2. Embedding Model Used:
+
+- Model: BERT (bert-base-uncased)
+
+- Embedding dimension: 768 (CLS token output)
+
+
+3. Total Vocabulary Size Used:
+
+- BERT tokenizer vocabulary size: 30,522 tokens
+
+4. OOV Handling Logic:
+
+- BERT uses WordPiece tokenization to handle out-of-vocabulary words
+
+- Unknown or rare words are split into known subword units, so no manual OOV handling is required
