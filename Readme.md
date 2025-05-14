@@ -55,9 +55,28 @@ Using `train_test_split()` while maintaining class balance.
 
 ---
 
-##  Model Architecture
+##  Models Used
 
-A simple **Feedforward Neural Network** using BERT embeddings:
+This project explores both classical and deep learning models to classify sentences as AI or Human-written, using 768-dimensional BERT embeddings.
+
+---
+
+###  Logistic Regression
+- A simple linear model used as a **baseline**.
+- Fast to train and useful for initial benchmarking.
+- Performs reasonably well on linearly separable features.
+
+---
+
+###  Random Forest
+- An **ensemble model** of decision trees.
+- Captures **non-linear patterns** and complex interactions.
+- Usually performs better than Logistic Regression for this dataset.
+
+---
+
+###  Feedforward Neural Network (FFNN)
+A deep learning model trained using TensorFlow/Keras:
 
 ```python
 model = Sequential([
